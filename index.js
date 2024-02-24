@@ -23,7 +23,6 @@ function getWeather() {
             error404.style.display = 'block';
             error404.classList.add('fadeIn');
             return;
-
         }
 
         error404.style.display = 'none';
@@ -55,7 +54,6 @@ function getWeather() {
             case 'Snow':
                 image.src = 'img/snow.png';
                 break;
-
         }
 
         temperature.innerHTML = `${parseInt(json.main.temp)}<span>°C</span>`;
@@ -75,7 +73,6 @@ function getWeather() {
         weatherDetails.classList.add('fadeIn');
 
         container.style.height = '590px';
-
 
     });
 }
@@ -118,8 +115,6 @@ function getLocation() {
                 case error.UNKNOWN_ERROR:
                     console.error("An unknown error occurred.");
                     break;
-
-
             }
         });
     } else {

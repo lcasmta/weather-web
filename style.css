@@ -1,3 +1,10 @@
+@keyframes fadeIn {
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -174,11 +181,4 @@ body {
 .fade-in {
   animation: 0.5s fadeIn forwards;
   animation-delay: 0.5s;
-}
-
-@keyframes fadeIn {
-  to {
-    scale: 1;
-    opacity: 1;
-  }
 }
